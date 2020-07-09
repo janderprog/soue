@@ -137,7 +137,7 @@
 			        	
 			        	<td>
 			        		<?php 
-			        			if($this->session->userdata('id_usuario') == $u->id){
+			        			if($this->session->userdata('id_usuario') == $u->id || $this->session->userdata('permissao')==1){
 			        				echo "<a href='".base_url()."main/editar' class='btn btn-success'><i class='fa fa-edit'></i></a>";
 			        			}else{
 			        				echo "<button class='btn btn-success' disabled><i class='fa fa-edit'></i></button>";
